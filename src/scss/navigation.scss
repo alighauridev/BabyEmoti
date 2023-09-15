@@ -1,0 +1,316 @@
+@import "./variable.scss";
+@import "./media.scss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  transition: 0.3s all;
+
+
+  .outer {
+    position: relative;
+
+    @include xtablet7 {
+      // height: 13vh;
+    }
+
+    .container {
+      max-width: 1250px;
+      margin: 0 auto;
+
+      @include display {
+        padding: 5px 20px;
+      }
+
+      .nav__grid {
+        display: grid;
+        /* place-items: center; */
+        grid-template-columns: 1fr 3fr 0.5fr;
+        position: relative;
+        align-items: center;
+
+        @include flex {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .logo {
+          justify-self: start;
+          display: flex;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+          }
+
+          img {
+
+            margin-left: -6px;
+
+
+            width: 100%;
+          }
+        }
+
+        nav {
+          ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            gap: 30px;
+
+            >li {
+              cursor: pointer;
+              text-align: center;
+              font-family: "Zen_Dots";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-decoration: none;
+              padding-block: 15px;
+
+              >a {
+                transition: 0.3s all;
+                color: #000;
+                text-transform: uppercase;
+
+                font-family: "Zen_Dots";
+
+                &:hover {}
+              }
+            }
+
+
+          }
+        }
+
+        .nav__btns {
+          display: flex;
+          align-items: center;
+          gap: 1.2rem;
+          justify-content: end;
+          font-family: "Zen_Dots";
+
+          @include xtablet7 {
+            gap: 1rem;
+          }
+
+          .btn {
+            padding: 8px 22px;
+            border-radius: 50px;
+            outline: 2px solid #3B3B3B;
+            cursor: pointer;
+            background: #ffa300;
+            transition: all 0.3s ease-in-out;
+            color: #000000;
+            font-family: "Zen_Dots";
+
+            border-radius: 3px;
+
+            // &:hover {
+            //   background: red;
+            //   color: white !important;
+            //   outline: 3px solid #3B3B3B;
+
+            // }
+
+            @include sm {
+              display: none;
+            }
+
+            span {
+              font-family: 'gta';
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 22px;
+
+
+            }
+          }
+
+          i {
+            padding: 3px 3px !important;
+          }
+
+          .logo-icons {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: white;
+            color: white;
+
+            @include xtablet7 {
+              gap: 0.6rem;
+            }
+
+            .icon {
+              border-radius: 50%;
+              transition: all 0.3s ease-in-out;
+
+              a {
+                align-items: center;
+                background: #222;
+                border-radius: 4px;
+                color: #fff;
+                cursor: pointer;
+                display: flex;
+                font-size: 27px;
+                justify-content: center;
+                padding: 5px;
+                transition: all 0.5s ease-in-out;
+
+                svg {
+                  padding: 1px;
+
+                  @include xtablet7 {
+                    padding: 2px;
+                  }
+
+                  @include xtablet13 {
+                    padding: 3px;
+                  }
+                }
+              }
+            }
+
+            .bars {
+              img {
+                max-width: 20px;
+                // filter: invert(1);
+                max-width: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// .nav__active {
+//   background: #0a0807 !important;
+//   backdrop-filter: blur(1px) !important;
+// }
+.auto_scroll {
+  position: fixed;
+  bottom: 5%;
+  right: 3.7%;
+  cursor: pointer;
+  transition: 0.3s all;
+  z-index: 1001;
+  /* max-width: 1200px; */
+  transform: scale(0);
+
+  /* margin: auto; */
+  @include display {
+    right: 1.4%;
+  }
+
+  @include coloum {
+    right: 1.7%;
+  }
+
+  >i {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    border-radius: 100px;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #363434;
+    background: white;
+    box-shadow: 0 0 12px 0px #00000054;
+
+    svg {
+      font-size: 2.8rem;
+
+      @include md {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    .nav__grid {
+      .nav__btns {
+        >i {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  header {
+    .nav__grid {
+      grid-template-columns: 1fr 1.5fr !important;
+
+      .logo {}
+
+      nav {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        z-index: 100;
+        overflow: hidden;
+        box-shadow: 0 0 5px black;
+
+        ul {
+          justify-content: start !important;
+          transition: 0.3s all ease-out;
+          flex-direction: column;
+          margin-top: -200%;
+          border-bottom: 1px solid #70696945;
+          align-items: flex-start !important;
+          padding: 0px 20px;
+          font-size: 1.4rem;
+          background: #333333;
+
+          li {
+            margin-right: unset;
+            margin-bottom: 15px;
+          }
+        }
+
+        .ul__active {
+          margin-top: 0% !important;
+        }
+      }
+
+      .nav__btns {
+        >i {
+          width: 50px;
+          height: 50px;
+          display: grid;
+          place-content: center;
+          border-radius: 100px;
+          pointer-events: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #363434;
+
+          @include xtablet7 {
+            // height: 42px;
+          }
+        }
+      }
+    }
+  }
+}

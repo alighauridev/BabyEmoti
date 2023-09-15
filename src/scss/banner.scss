@@ -1,0 +1,138 @@
+@import "./media.scss";
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#banner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  background-color: #ffd51d;
+
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include md {
+      grid-template-columns: 1fr;
+    }
+
+    .banner_info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      .heading {
+        h1 {
+          color: #000;
+          font-size: 57px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 63px;
+          margin-top: 0;
+          position: relative;
+          z-index: 5;
+          padding-right: 20px;
+          font-family: "Zen_Dots";
+
+        }
+      }
+
+      .banner_des {
+
+
+        p {
+          color: #000;
+          font-family: 'Poppins', sans-serif;
+
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+
+      .banner_btns {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        a {
+          background: linear-gradient(to left, #10C71A, #1EEE2E) padding-box, linear-gradient(to top, #48f045, #2cd22c) border-box;
+          text-decoration: none;
+          border-radius: 34px;
+
+          button {
+            color: #000;
+            font-family: "Zen_Dots";
+            font-size: 18px;
+            font-style: normal;
+            padding: 13px 70px 13px 33px;
+            background: transparent;
+            border: 3px solid transparent;
+            display: inline-block;
+            position: relative;
+          }
+        }
+      }
+
+      .contract_address_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .company_links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        a {
+          img {
+            max-width: 170px;
+          }
+        }
+      }
+    }
+
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      @include md {
+        justify-content: flex-start;
+      }
+
+      img {
+        width: 484px;
+        object-fit: cover;
+
+        @include md {
+          width: 100%;
+        }
+      }
+    }
+
+
+  }
+
+
+}
