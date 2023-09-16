@@ -1,4 +1,3 @@
-
 export const nav = [
   {
     name: "Home",
@@ -49,48 +48,68 @@ export const team = [
 
 export const roadmap = [
   {
-    id: "01",
+    id: "Day -2/-1",
     points: [
-      "Marketing to build a solid foundation and community to ensure long-term support",
-      "Expansion of marketing on different platforms such as YouTube, Instagram, and Twitch",
-      "Partnerships and collaborative giveaways",
-      "Public release of Discord",
-      "Mint date and price announced",
-      "Public AMA/Twitch stream to prove project legitimacy and bring trust to our community",
-      "Release of the demo DeFi platform",
+      "Launch a media push for Emoticoin on all social media platforms.",
+      "Publish articles and press releases across the internet to educate about EmotiCoin and RSP.",
     ],
     imgUrl: "/images/nft/3.png",
   },
   {
-    id: "02",
+    id: "Day 1",
     points: [
-      "The mint of 6,100 Royal Society NFT's",
-      "Listing on Magic Eden",
+      "   Deploy the contract and launch the website.",
+      "Release explanatory videos. ",
       "Pre-approval for Moonrank and Solrarity",
-      "Holder verification through our uniquely developed verification system",
-      "Staking will be released on the DeFi platform the second mint is over",
-      "Our native token $SWRD will be listed on a DEX",
-      "Formation of Royal Society DAO",
-      "On chain voting will be available for all DAO members",
-      "Acquisitions of passive income options for DAO. All profits will go to the Royal Society Liquidity Pool",
-      "Releasing Quests, Marketplace, and summoning on the Royal Society DeFi platform",
-      "Weekly Royal Society Town Halls",
+      "Spread EmotiCoin press releases across the crypto news stream. ",
+
+      "Execute the 1st to 6th Reverse Splits to drive a chart explosion.      ",
+
+      "Target dozens of influencers to daily discuss EmotiCoin and RSP.      ",
+
+      "Initiate an AI marketing campaign for mass reach.      ",
+
+      "Begin the first daily competition for Emoticoin holders.      ",
     ],
     imgUrl: "/images/nft/4.png",
   },
   {
-    id: "03",
+    id: "Day 2 to Day 13",
     points: [
-      "Royal Society DeFi map extension",
-      "Tavern (casino) all profits will go to the Royal Society Liquidity Pool",
-      "Releasing Token staking pools on Royal Society DeFi platform (Double Dip staking)",
-      "Collab with top projects for token staking pools integrated on the Royal Society DeFi platform",
-      "Bridging to other blockchains",
-      "Releasing Yield Farming on the DeFi platform",
-      "Node service being integrated into the Royal Society DeFi platform",
+      "Continue the 24/7 influencer marketing campaign for 14 days.",
+      "Maintain a consistent trending on DEXtools. ",
+      "Secure consistant Avedex Trending positions 1-3.",
+      "Maintain a consistant trending position on various platforms.      ",
+
+      "Host daily community competitions (introduce 4 new competitions each day).      ",
+
+      " Launch an unprecedented Guerrilla marketing campaign managed by a group of 40 individuals working in shifts 24/7.",
+      "Get listed on CoinMarketCap.      ",
       "AMA for info about RoadMap V2",
       "WhitePaper V2",
-      "And we are just getting started- RS team",
+      "Conduct multiple powerful Twitter Space sessions and Telegram AMA sessions daily.  ",
+    ],
+    // imgUrl: "/images/nft/9.gif",
+  },
+  {
+    id: "Day 14",
+    points: [
+      "Execute the 84th split, marking the final reverse split. Update the supply accordingly.",
+      "Permanently disable taxes.      ",
+      "Introduce the Emoticoin Lottery.",
+      "List Emoticoin on multiple exchanges.      ",
+
+      "Host a grand finale competition to celebrate the achieved success.  ",
+    ],
+    // imgUrl: "/images/nft/9.gif",
+  },
+  {
+    id: "After 14 days    ",
+    points: [
+      "EmotiNFT Introduction: The next-gen of Minting & Staking ",
+      "Emoti Exchange Launch      ",
+      " NFT Marketplace and Staking Debut",
+      "EmotiCoin will update it's roadmap every 14days     ",
     ],
     // imgUrl: "/images/nft/9.gif",
   },
@@ -131,5 +150,34 @@ export const FAQ = [
   {
     q: "What about the price?",
     ans: ["The floor price is 0.043 ETH."],
+  },
+];
+
+export const steps = [
+  {
+    name: "Step 1",
+    des: (
+      <p>
+        <b>🌐 Click the button below </b>to be directed straight to Telegram.
+      </p>
+    ),
+  },
+  {
+    name: "Step 2",
+    des: (
+      <p>
+        <b>👇Follow the instructions </b> and enter the provided command
+        (/avatars).
+      </p>
+    ),
+  },
+  {
+    name: "Step 3",
+    des: (
+      <p>
+        <b>Enjoy your fresh, distinctive avatar</b>and show it off within our
+        community! 😄🎉
+      </p>
+    ),
   },
 ];

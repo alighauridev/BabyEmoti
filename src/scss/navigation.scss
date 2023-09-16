@@ -52,10 +52,9 @@ header {
 
           img {
 
-            margin-left: -6px;
-
-
-            width: 100%;
+             /* margin-left: -6px; */
+    width: 100%;
+    max-width: 200px;
           }
         }
 
@@ -76,7 +75,6 @@ header {
               font-weight: 400;
               line-height: normal;
               text-decoration: none;
-              padding-block: 15px;
 
               >a {
                 transition: 0.3s all;
@@ -96,45 +94,52 @@ header {
         .nav__btns {
           display: flex;
           align-items: center;
-          gap: 1.2rem;
-          justify-content: end;
-          font-family: "Zen_Dots";
+          align-items: center;
 
-          @include xtablet7 {
-            gap: 1rem;
-          }
+
 
           .btn {
-            padding: 8px 22px;
-            border-radius: 50px;
-            outline: 2px solid #3B3B3B;
-            cursor: pointer;
-            background: #ffa300;
-            transition: all 0.3s ease-in-out;
-            color: #000000;
+            margin: 3px;
+            position: relative;
+            background: #FFD71E;
+            padding: 11px 10px 10px 10px;
+            border-radius: 25px;
+            color: #000;
+            text-align: center;
             font-family: "Zen_Dots";
-
-            border-radius: 3px;
-
-            // &:hover {
-            //   background: red;
-            //   color: white !important;
-            //   outline: 3px solid #3B3B3B;
-
-            // }
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border: 4px solid #2ED42E;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             @include sm {
               display: none;
             }
 
             span {
-              font-family: 'gta';
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-size: 22px;
+              text-align: center;
+              font-family: "Zen_Dots";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              margin-right: 10px;
+            }
+          }
 
+          .bars {
+            cursor: pointer;
+            position: relative;
+            z-index: 111;
 
+            svg {
+              color: #16d722;
+              font-size: 40px;
             }
           }
 
@@ -183,13 +188,7 @@ header {
               }
             }
 
-            .bars {
-              img {
-                max-width: 20px;
-                // filter: invert(1);
-                max-width: 20px;
-              }
-            }
+
           }
         }
       }
@@ -264,32 +263,54 @@ header {
       .logo {}
 
       nav {
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        z-index: 100;
-        overflow: hidden;
-        box-shadow: 0 0 5px black;
+        // position: absolute;
+        // top: 100%;
+        // width: 100%;
+        // z-index: 100;
+        // overflow: hidden;
+        // box-shadow: 0 0 5px black;
 
         ul {
-          justify-content: start !important;
+
           transition: 0.3s all ease-out;
+          align-items: start !important;
+          justify-content: center !important;
           flex-direction: column;
-          margin-top: -200%;
           border-bottom: 1px solid #70696945;
           align-items: flex-start !important;
           padding: 0px 20px;
-          font-size: 1.4rem;
-          background: #333333;
+          position: fixed;
+          top: 0px;
+          z-index: 11;
+          width: 300px;
+          left: 0px;
+          height: 100vh;
+          background: white;
+          transform: translateX(-100%);
+
+          @include mobile {
+            width: 250px;
+          }
 
           li {
             margin-right: unset;
             margin-bottom: 15px;
+            width: 100%;
+            text-align: start !important;
+
+            a {
+              width: 100%;
+              position: relative;
+              display: inline-flex;
+              height: 100%;
+              padding-block: 15px;
+            }
           }
         }
 
         .ul__active {
-          margin-top: 0% !important;
+          transform: translateX(0%);
+
         }
       }
 

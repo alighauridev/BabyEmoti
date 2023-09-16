@@ -1,6 +1,6 @@
 import React from "react";
 import heading from "../assests/about.h.png";
-import img1 from "../assests/about-main.png";
+import about_img from "../assests/about_image.webp";
 import "../scss/about.scss";
 const About = () => {
   return (
@@ -8,23 +8,30 @@ const About = () => {
       <section id="about">
         <div className="container">
           <div className="img">
-            <img src={img1} alt="" />
+            <img src={about_img} alt="About Image" />
           </div>
           <div className="content">
             <div className="heading">
-              <h1>About The Feature</h1>
+              <h1>About EmotiCoin</h1>
             </div>
             <div className="para">
               <p>
-                Bugcat Capoo (貓貓蟲咖波 Māo māo chóng kā bō), sometimes
-                abbreviated to Capoo, is a cartoon character resembling a chubby
-                blue cat with six legs. He is the namesake and main subject of a
-                webcomic strip on social media platforms and now ready to take
-                over Ethereum space!
+                <b>Connecting community passion with crypto ingenuity! 🚀</b>
+                As pioneers in the meme coin realm, we're proud to introduce the
+                first-ever MemeCoin Ecosystem. With an immutable commitment to
+                0% taxes and utilities, our vision goes beyond mere
+                transactions. With 100% buybacks into $EMOTI and every utility
+                designed to uplift our community, we're not just participating
+                in the crypto market but leading it! 💎
               </p>
             </div>
-            <div className="about_bts">
-              <a href="#" className="btn_1"></a>
+            <div className="about_btn">
+              <a href="#" className="btn_1 ">
+                <button>
+                  <b>Read Whitepaper</b>
+                  <div className="span">🤑</div>
+                </button>
+              </a>
             </div>
           </div>
         </div>

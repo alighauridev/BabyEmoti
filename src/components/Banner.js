@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import "../scss/banner.scss";
-import img1 from "../assests/banner.png";
+import img1 from "../assests/img_6.png";
 import { FiCopy } from "react-icons/fi";
 import icon1 from "../assests/coingecko.webp";
 import icon2 from "../assests/coinmarketcap.webp";
 import icon3 from "../assests/idmgpnn.webp";
 import Marquee from "react-easy-marquee";
+import videoIcon from "../assests/wideo-header.webp";
 const Banner = () => {
   useEffect(() => {}, []);
   return (
@@ -26,11 +27,15 @@ const Banner = () => {
             </div>
 
             <div className="banner_btns">
-              <a href="#" className="btn_1">
-                <button>Buy on Uniswap</button>
+              <a href="#" className="btn_1 " data-emoji="🤑">
+                <button>
+                  <b>Buy on Uniswap</b>
+                  <div className="span">🤑</div>
+                </button>
               </a>
               <div className="btn_2">
-                <button>Watch video</button>
+                <img src={videoIcon} alt="Video Icon" />
+                <span>Watch video</span>
               </div>
             </div>
             <div className="contract_address_btn">

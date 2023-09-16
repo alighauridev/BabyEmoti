@@ -11,6 +11,10 @@ import RoadMapOne from "../components/RoadMapOne";
 import Tokenomics from "../components/Tokenomics";
 import Join from "../components/Join";
 import Team from "../components/Team";
+import Utility from "../components/Utility";
+import Token from "../components/Token";
+import AboutTwo from "../components/AboutTwo";
+import Upgrade from "../components/Upgrade";
 
 const Home = () => {
   let [loading, setLoading] = useState(true);
@@ -25,7 +29,13 @@ const Home = () => {
             <Navigation />
             <Banner />
             <About />
-            <Roadmap />
+            <Utility />
+            <Token />
+            <AboutTwo />
+            <Upgrade />
+            <div className="blue_bc">
+              <Roadmap />
+            </div>
             <Tokenomics />
             <Join />
             <Team />

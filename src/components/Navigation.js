@@ -5,9 +5,18 @@ import "../scss/navigation.scss";
 import { FaDiscord } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { MdKeyboardArrowUp } from "react-icons/md";
-import logo1 from "../assests/logo-1.webp";
-import logo2 from "../assests/logo-2.webp";
-import { LinkOff, LinkOffOutlined, LinkRounded } from "@material-ui/icons";
+import logo1 from "../assests/logo_main.webp";
+
+import {
+  LinkOff,
+  LinkOffOutlined,
+  LinkRounded,
+  Menu,
+  ClearAllOutlined,
+} from "@material-ui/icons";
+import MenuIcon from "@mui/icons-material/Menu";
+import ClearIcon from "@mui/icons-material/Clear";
+import { Backdrop } from "@material-ui/core";
 const Navigation = () => {
   const [navToggler, setNavToggler] = useState(false);
   const [navColor, setNavColor] = useState(false);
@@ -38,32 +47,38 @@ const Navigation = () => {
               <div className="logo">
                 <a href="#">
                   <img src={logo1} alt="logo" />
-                  <img src={logo2} alt="logo" />
+                
                 </a>
               </div>
               <nav>
-                <ul className={navToggler ? "ul__active" : ""}>
-                  {nav.map((ite, ind) => {
-                    return (
-                      <li key={ind}>
-                        <a
-                          style={navColor ? { textShadow: "none" } : {}}
-                          href={ite.path}
-                        >
-                          {ite.name}
-                        </a>
-                      </li>
-                    );
-                  })}
-                  <li></li>
-                </ul>
+                {/* <Backdrop
+                  open={navToggler ? true : false}
+                  style={{ zIndex: "11" }}
+                  onClick={() => setNavToggler(false)}
+                > */}
+                  <ul className={navToggler ? "ul__active" : ""}>
+                    {nav.map((ite, ind) => {
+                      return (
+                        <li key={ind}>
+                          <a
+                            style={navColor ? { textShadow: "none" } : {}}
+                            href={ite.path}
+                          >
+                            {ite.name}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                {/* </Backdrop> */}
               </nav>
               <div className="nav__btns">
                 <div className="btn">
-                  <span>CHART</span>
+                  <span>CHART </span>
+                  🤑
                 </div>
                 <i onClick={() => barBtn()} className="bars">
-                  <img
+                  {/* <img
                     src={
                       !navToggler ? "/images/bb (1).png" : "/images/bb (2).png"
                     }
@@ -75,7 +90,9 @@ const Navigation = () => {
                       cursor: "pointer",
                       transitions: "all 0.5s ease-in-out",
                     }}
-                  />
+                  /> */}
+
+                  {!navToggler ? <MenuIcon /> : <ClearIcon />}
                 </i>
               </div>
             </div>
