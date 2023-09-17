@@ -5,7 +5,7 @@ import { FiCopy } from "react-icons/fi";
 import icon1 from "../assests/coingecko.webp";
 import icon2 from "../assests/coinmarketcap.webp";
 import icon3 from "../assests/idmgpnn.webp";
-import Marquee from "react-easy-marquee";
+import Marquee from "react-simple-marquee";
 import videoIcon from "../assests/wideo-header.webp";
 const Banner = () => {
   useEffect(() => {}, []);
@@ -62,27 +62,25 @@ const Banner = () => {
           </div>
         </div>
       </section>
-      <Marquee gradient={false} speed={0.1}  className="marqu">
-        <p
-          style={{
-            fontSize: "1.1wrem",
-            fontFamily: "Menco !important",
-            color: "#80abff",
-            textTransform: "uppercase",
-
-
-          }}
-        >
-          <div>
-          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑 
-          </div>
-          <div>
-          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑 
-          </div>
-          <div>
-          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑 
-          </div>
-        </p>
+      <Marquee gradient={false} speed={20} className="marqu">
+        <div>
+          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
+        </div>
+        <div>
+          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
+        </div>
+        <div>
+          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
+        </div>
+        <div>
+          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
+        </div>
+        <div>
+          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
+        </div>
+        <div>
+          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
+        </div>
       </Marquee>
     </>
   );
