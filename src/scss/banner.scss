@@ -16,7 +16,7 @@
   z-index: 1;
   flex-direction: column;
 
-
+  background-color: #ffd71e;
 
   .container {
     max-width: 1200px;
@@ -251,4 +251,29 @@
   }
 
 
+}
+
+.marqu {
+  width: 100%;
+  background: linear-gradient(90deg, #1ABEFA 33.68%, #1974F0 72.86%);
+  height: 7rem !important;
+
+  p {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      font-family: "Zen_Dots";
+      color: #FFF !important;
+      text-align: center;
+
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 70px;
+    }
+  }
 }

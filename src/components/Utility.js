@@ -6,7 +6,7 @@ const Utility = () => {
   return (
     <>
       <section id="utility">
-        <div className="top_content">
+        <div className="top_content"  data-aos="fade-up">
           <h1>Emoticoin's Utility</h1>
           <p>
             It's a realm never seen before in the meme coin universe! 🌌 At
@@ -19,7 +19,7 @@ const Utility = () => {
         </div>
 
         <div className="container">
-          <div className="content">
+          <div className="content"  data-aos="fade-up">
             <div className="heading">
               <h1>NFT Staking</h1>
             </div>
@@ -43,7 +43,7 @@ const Utility = () => {
               </a>
             </div>
           </div>
-          <div className="img">
+          <div className="img"  data-aos="fade-up">
             <img src={slide_img} alt="About Image" />
           </div>
         </div>

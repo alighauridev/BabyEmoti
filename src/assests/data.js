@@ -117,39 +117,85 @@ export const roadmap = [
 
 export const FAQ = [
   {
-    q: "What is NFTs?",
-    ans: [
-      "NFTs Stands for non-fungible tokens. Non-fungible tokens are unique cryptographic tokens that exist on blockchain and cannot be replicated-having unique identification code, metadata and properties.     ",
-    ],
+    q: "1. What is EmotiCoin, and what is it focusing on?",
+    ans: ["1. What is EmotiCoin, and what is it focusing on?  "],
   },
 
   {
-    q: "Why NFTs are so popular?",
+    q: "2. How does the Reverse Split Protocol work?",
     ans: [
-      "One of the reasons why NFTs are so popular is explained by what an NFT is. Non-fungible tokens are like a digital receipt that shows that you own a collectable item. NFTs are one of a kind, they can't be exchanged and they reflect ownership of totally unique items. This is where the popularity comes in. ",
+      "EmotiCoin's Reverse Split Protocol is designed to gradually reduce the token supply over 14 days through 84 splits. Despite the decrease in the number of tokens you hold, the value of each EmotiCoin remains consistent. This process maintains and enhances the value of your investment, paving the way for a more stable and prosperous future.",
     ],
   },
   {
-    q: "Are NFTs a good investment? ",
+    q: "3. Are there any missing coins in the EmotiCoin ecosystem? ",
     ans: [
-      "NFTs are digital assets that act as secure documentation of ownership and can be a worthwhile investment for collectors and investors. ",
+      "The Reverse Split Protocol, part of our strategic plan, ensures that 20% of the token supply is cut with each split over the 14-day journey. However, it's essential to understand that the value of EmotiCoin remains unaffected during this process.",
     ],
   },
   {
-    q: "What's the future of NFTs?",
+    q: "4. How will the Reverse Split affect my holdings?",
     ans: [
-      "NFTs have a great future, especially with the idea of turning real world assets into NFTs. Also the idea of fractionalizing NFTs; that is allowing more than one person to co-own an NFT will bring NFT into mass adoption.",
+      "As the Reverse Split Protocol progresses, you will experience a reduction in the number of EmotiCoin tokens you hold. However, the value of your holdings will remain intact, ensuring that your investment remains valuable and compelling throughout the process.",
     ],
   },
   {
-    q: "How do i know which NFT will be worth of money?",
+    q: "5. Which blockchains does EmotiCoin operate on?",
+    ans: ["EmotiCoin operates on Ethereum (ETH) Blockchain."],
+  },
+  {
+    q: "6. What other blockchains and partnerships are EmotiCoin exploring?",
     ans: [
-      "The social proof associated with the project behind an NFT is one of the decisive factors that determine the NFT's value. Checking their profiles on social media platforms like Twitter and Instagram can help one gauge their acceptability.",
+      "EmotiCoin's dedication to innovation extends to exploring other potential blockchains and partnerships that align with our mission. EmotiCoin aims to offer its community a diverse and prosperous future in the ever-evolving crypto space by continually seeking strategic collaborations and new technological horizons.",
     ],
   },
   {
-    q: "What about the price?",
-    ans: ["The floor price is 0.043 ETH."],
+    q: "7. Will EmotiCoin be available on NFT marketplaces?",
+    ans: [
+      "Yes, EmotiCoin has plans to expand its presence to NFT (Non-Fungible Token) marketplaces. Through NFTs, users will have unique opportunities to own exclusive digital assets and be part of an ever-expanding creative ecosystem within EmotiCoin.",
+    ],
+  },
+  {
+    q: "8. What listings can we expect for EmotiCoin?",
+    ans: [
+      "EmotiCoin has exciting plans for listings on several prominent exchanges, including LBank, BitMart, Poloniex, Coinstore, MXC, DigiFinex, and Bitget. These listings will enhance EmotiCoin's visibility and accessibility, bringing more opportunities for growth and success.",
+    ],
+  },
+  {
+    q: "9. How can I participate in EmotiCoin's journey to success?",
+    ans: [
+      "Participating in EmotiCoin's journey is simple! Visit our Website, join our vibrant community, invest in our coin after you have done your research, and embrace the spirit of laughter and wealth. By holding EmotiCoin tokens, you become an integral part of our vision to revolutionize the crypto space with positivity, innovation, and the joy of being part of something exceptional.",
+    ],
+  },
+  {
+    q: "10. Where can I find more information about EmotiCoin?",
+    ans: [
+      "Elastic supply tokens have a changing circulating supply. The idea is that instead of price volatility, what changes is the token supply through events called rebases.",
+    ],
+  },
+  {
+    q: "11. How can I get involved with EmotiCoin's community?",
+    ans: [
+      "Joining EmotiCoin's community is easy! Engage with us on social media, participate in competitions, and interact with other community members. Your voice matters, and we encourage open discussions within the EmotiCoin community.",
+    ],
+  },
+  {
+    q: "12. Does EmotiCoin have any long-term plans or partnerships in the pipeline?",
+    ans: [
+      "As a dynamic project, we continuously explore partnerships and long-term strategies to drive EmotiCoin's growth and success. Stay tuned for exciting announcements regarding our future endeavors.",
+    ],
+  },
+  {
+    q: "13. I have BNB, how i can purchase EmotiCoin?",
+    ans: [
+      "Purchasing EmotiCoin with your BNB is a breeze. Just use our cross-chain bridge, and you'll have those EmotiCoins in your wallet in no time.",
+    ],
+  },
+  {
+    q: "14. How can I stay updated on EmotiCoin's progress?",
+    ans: [
+      "Follow us on social media platforms like Twitter, Telegram, and Instagram to receive regular updates, news, and announcements.",
+    ],
   },
 ];
 

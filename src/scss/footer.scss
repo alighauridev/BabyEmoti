@@ -4,36 +4,137 @@
 #footer {
   position: relative;
 
+  background-color: #ffcb17;
 
   .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 60px 20px 30px;
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: 20px;
+
     .top {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px 30px;
+      gap: 40px;
 
+      @include md {
+        grid-template-columns: 1fr;
+      }
 
-
-      .logo {
-        justify-self: start;
+      .footer_left {
         display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        row-gap: 20px;
 
-        a {
-          display: flex;
+        @include md {
           align-items: center;
-          justify-content: center;
-          gap: 5px;
         }
 
+        .logo {
+          img {
+            /* margin-left: -6px; */
+            width: 100%;
+            max-width: 200px;
+          }
+        }
 
+        .para {
+          color: #000;
+          font-family: "Zen_Dots";
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 31px;
+          margin-top: 15px;
+          margin-bottom: 20px;
+
+          @include md {
+            text-align: center;
+          }
+        }
+
+        .left_bottom {
+          span {
+            color: #000;
+            font-family: "Zen_Dots";
+            display: flex;
+            justify-content: flex-start;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 31px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            @include md {
+              text-align: center;
+            }
+          }
+
+          a {
+            color: #000;
+            font-family: "Zen_Dots";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 31px;
+            text-decoration: revert !important;
+          }
+        }
+
+        .icons {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          gap: 10px;
+
+          a {
+            img {
+              max-width: 45px;
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+
+      .footer_right {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        justify-content: center;
+        row-gap: 18px;
+
+        h1 {
+          color: #000;
+          font-weight: 400;
+          font-family: "Zen_Dots";
+          font-style: normal;
+          margin-top: 0;
+          font-size: 10px;
+        }
+
+        p {
+          color: #000;
+          font-family: "Zen_Dots";
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 17px;
+          margin-bottom: 0;
+          display: flex;
+          justify-content: center;
+          padding-bottom: 10px;
+        }
       }
 
 
@@ -46,35 +147,22 @@
       align-items: center;
       justify-content: center;
       row-gap: 20px;
+      background-color: #ffd71e;
 
-      span {
-        text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
-        font-size: 18px;
-        color: #000000;
-        font-weight: 400;
-        font-family: 'font-1';
+      p {
+        max-width: 1000px;
+        margin: auto;
+        padding: 23px 20px;
+        color: #000;
         text-align: center;
-      }
+        font-family: "Zen_Dots";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
 
-      .icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
+        margin-inline: auto;
 
-        a {
-          padding: 12px;
-          background-color: white;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          svg {
-            fill: #363434;
-            font-size: 30px;
-          }
-        }
       }
     }
   }

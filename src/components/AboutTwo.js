@@ -6,10 +6,10 @@ const AboutTwo = () => {
     <>
       <sectio id="aboutTwo">
         <div className="container">
-          <div className="info_left">
+          <div className="info_left" data-aos="fade-up">
             <p>Rest easy with EmotiCoin's commitment to safety!</p>
           </div>
-          <div className="info_right">
+          <div className="info_right" data-aos="fade-up">
             <div className="img_box">
               <img src={desIcon} alt={"Dessert icon"} />
             </div>
@@ -28,7 +28,7 @@ const AboutTwo = () => {
           </div>
         </div>
 
-        <div className="aboutTwo_btn">
+        <div className="aboutTwo_btn" data-aos="fade-up">
           <a href="#" className="btn_1 ">
             <button>
               <b> View Audit Report</b>

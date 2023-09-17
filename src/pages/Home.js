@@ -15,6 +15,7 @@ import Utility from "../components/Utility";
 import Token from "../components/Token";
 import AboutTwo from "../components/AboutTwo";
 import Upgrade from "../components/Upgrade";
+import ReadMore from "../components/ReadMore";
 
 const Home = () => {
   let [loading, setLoading] = useState(true);
@@ -35,10 +36,13 @@ const Home = () => {
             <Upgrade />
             <div className="blue_bc">
               <Roadmap />
+              <ReadMore />
+              <Faq />
+              <Join />
             </div>
-            <Tokenomics />
+            {/* <Tokenomics />
             <Join />
-            <Team />
+            <Team /> */}
             <Footer />
           </main>
         </>

@@ -6,11 +6,11 @@ const Token = () => {
   return (
     <>
       <section id="token">
-        <div className="heading">
+        <div className="heading"  data-aos="fade-up">
           <h1>Token allocations</h1>
         </div>
         <div className="container">
-          <div className="info">
+          <div className="info"  data-aos="fade-up">
             <ul>
               <li>
                 <b>
@@ -44,11 +44,11 @@ const Token = () => {
               </li>
             </ul>
           </div>
-          <div className="token_img">
+          <div className="token_img"  data-aos="fade-up">
             <img src={token_image} alt="Token Image" />
           </div>
         </div>
-        <div className="about_btn">
+        <div className="about_btn"  data-aos="fade-up">
           <a href="#" className="btn_1 ">
             <button>
               <b>Read Whitepaper</b>

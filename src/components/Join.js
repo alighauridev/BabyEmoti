@@ -6,11 +6,18 @@ const Join = () => {
     <>
       <section id="join">
         <div className="container">
-          <div className="heading">
-            <h1>OME JOIN $CAPOO OUR ARMY!</h1>
-          </div>
-          <div className="content">
-            <img src={img1} alt="" />
+          <div className="content_box" data-aos="fade-up">
+            <div className="heading">
+              <h1>Become a part of our community</h1>
+            </div>
+            <div className="join_btn" >
+              <a href="#" className="btn_1 ">
+                <button>
+                  <b> I want this!!!!</b>
+                  <div className="span">🤑</div>
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </section>

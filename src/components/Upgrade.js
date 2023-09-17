@@ -6,12 +6,12 @@ const Upgrade = () => {
     <>
       <section id="upgrade">
         <div className="container">
-          <div className="main_heading">
+          <div className="main_heading"  data-aos="fade-up">
             <h1>Upgrade your Telegram </h1>
             <h1>avatar with a unique</h1>
             <h1>EmotiCoin twist!</h1>
           </div>
-          <div className="des">
+          <div className="des"  data-aos="fade-up">
             <b>
               Feeling like adding a touch of uniqueness to your Telegram
               profile?
@@ -20,7 +20,7 @@ const Upgrade = () => {
             randomly generate a creative EmotiCoin-themed avatar. 😄🌕
           </div>
 
-          <div className="steps">
+          <div className="steps"  data-aos="fade-up">
             {steps.map((step) => (
               <>
                 <div className="step_box">
@@ -31,7 +31,7 @@ const Upgrade = () => {
             ))}
           </div>
 
-          <div className="upgrade_btn">
+          <div className="upgrade_btn"  data-aos="fade-up">
             <a href="#" className="btn_1 ">
               <button>
                 <b> I want this!!!!</b>

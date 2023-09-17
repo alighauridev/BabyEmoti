@@ -6,13 +6,7 @@ import { roadmap } from "../assests/data";
 import correct from "../assests/correctwhite-green.webp";
 
 const Roadmap = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      offset: 100,
-    });
-    // how to check page distance from top
-  }, []);
+  
   
   return (
     <>
@@ -37,6 +31,14 @@ const Roadmap = () => {
               );
             })}
           </div>
+        </div>
+        <div className="aboutTwo_btn" data-aos="fade-up">
+          <a href="#" className="btn_1 ">
+            <button>
+              <b> View Audit Report</b>
+              <div className="span">🤑</div>
+            </button>
+          </a>
         </div>
       </section>
     </>

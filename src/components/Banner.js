@@ -13,7 +13,7 @@ const Banner = () => {
     <>
       <section id="banner">
         <div className="container">
-          <div className="banner_info">
+          <div className="banner_info" data-aos="fade-up">
             <div className="heading">
               <h1>Redefining Meme Coins with Real-World Utilities!</h1>
             </div>
@@ -57,31 +57,33 @@ const Banner = () => {
               </a>
             </div>
           </div>
-          <div className="img">
+          <div className="img" data-aos="fade-up">
             <img src={img1} alt="" />
           </div>
         </div>
       </section>
-      {/* <Marquee speed={3000}>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          eveniet ipsam error tempora aperiam esse necessitatibus officiis eaque
-          doloribus, assumenda ullam facilis aspernatur est atque dicta adipisci
-          soluta ab beatae.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          eveniet ipsam error tempora aperiam esse necessitatibus officiis eaque
-          doloribus, assumenda ullam facilis aspernatur est atque dicta adipisci
-          soluta ab beatae.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          eveniet ipsam error tempora aperiam esse necessitatibus officiis eaque
-          doloribus, assumenda ullam facilis aspernatur est atque dicta adipisci
-          soluta ab beatae.
-        </h1>
-      </Marquee> */}
+      <Marquee gradient={false} speed={0.1}  className="marqu">
+        <p
+          style={{
+            fontSize: "1.1wrem",
+            fontFamily: "Menco !important",
+            color: "#80abff",
+            textTransform: "uppercase",
+
+
+          }}
+        >
+          <div>
+          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑 
+          </div>
+          <div>
+          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑 
+          </div>
+          <div>
+          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑 
+          </div>
+        </p>
+      </Marquee>
     </>
   );
 };

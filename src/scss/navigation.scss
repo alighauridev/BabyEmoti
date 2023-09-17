@@ -9,7 +9,7 @@ html {
 header {
   width: 100%;
   transition: 0.3s all;
-
+  background-color: #ffd71e;
 
   .outer {
     position: relative;
@@ -22,9 +22,7 @@ header {
       max-width: 1250px;
       margin: 0 auto;
 
-      @include display {
-        padding: 5px 20px;
-      }
+      padding: 15px ;
 
       .nav__grid {
         display: grid;
@@ -52,9 +50,9 @@ header {
 
           img {
 
-             /* margin-left: -6px; */
-    width: 100%;
-    max-width: 200px;
+            /* margin-left: -6px; */
+            width: 100%;
+            max-width: 200px;
           }
         }
 
