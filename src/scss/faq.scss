@@ -30,6 +30,9 @@
         line-height: 80px;
         margin-bottom: 30px;
         margin-left: -50px;
+        @include mobile{
+          font-size: 34px;
+        }
       }
     }
 
