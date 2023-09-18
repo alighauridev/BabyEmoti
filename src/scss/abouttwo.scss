@@ -28,9 +28,14 @@
       background: linear-gradient(to left, #10C71A, #1EEE2E) padding-box, linear-gradient(to top, #48f045, #2cd22c) border-box;
       border-radius: 34px;
       border: 3px solid transparent;
-      padding: 80px 63px 49px 75px;
+      padding: 80px 65px 80px 65px;
       position: relative;
       overflow: hidden;
+
+      @include md {
+        padding: 60px 65px 60px 65px;
+
+      }
 
       p {
         color: #000;

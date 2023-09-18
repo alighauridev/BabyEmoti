@@ -8,6 +8,10 @@
   .heading {
     padding: 70px 20px 0px 20px;
 
+    @include mobile {
+      padding-top: 220px;
+    }
+
     h1 {
       color: #fff;
       font-family: "Zen_Dots";
@@ -17,6 +21,7 @@
       line-height: 80px;
     }
   }
+
   .container {
     max-width: 1200px;
     margin: auto;
@@ -25,8 +30,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     .roadmap__grid {
       width: 100%;
+
       h2 {
         display: flex;
         align-items: center;
@@ -38,19 +45,23 @@
         margin-top: 31px;
         margin-bottom: 15px;
         position: relative;
+
         img {
           width: 100%;
           max-width: 50px;
         }
       }
-      .item{
-        ul{
-              padding-left: 50px;
-              @include md{
-              padding-left: 15px;
 
-              }
-          li{
+      .item {
+        ul {
+          padding-left: 50px;
+
+          @include md {
+            padding-left: 15px;
+
+          }
+
+          li {
             color: #FFF;
             font-family: "Poppins";
             font-size: 14px;
@@ -65,40 +76,35 @@
       }
     }
   }
+
   .aboutTwo_btn {
     display: flex;
     align-items: center;
     justify-content: center;
 
     a {
+      cursor: pointer;
 
-padding-bottom: 90px;
       button {
-        color: white;
+        color: #000;
         font-family: "Zen_Dots";
         font-size: 18px;
         font-style: normal;
-        padding: 13px 33px 13px 33px;
+        padding: 8px 33px 8px 33px;
         background: transparent;
         border: 3px solid transparent;
         display: inline-block;
         position: relative;
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
         display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 20px;
         width: 100%;
         max-width: 500px;
         background: linear-gradient(to left, #FD653C, #ED3B1A) padding-box, linear-gradient(to top, #fd653c, #ed3b1a) border-box;
         text-decoration: none;
-        color: white;
-        position: relative;
         border-radius: 34px;
-        cursor: pointer;
-&:hover{
 
-}
         b {
           color: white;
           font-family: "Zen_Dots";
@@ -109,6 +115,14 @@ padding-bottom: 90px;
           @include mobile {
             font-size: 15px;
 
+          }
+        }
+
+        .span {
+          img {
+            width: 100%;
+            height: 100%;
+            max-width: 45px;
           }
         }
 

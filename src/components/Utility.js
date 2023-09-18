@@ -1,6 +1,8 @@
 import React from "react";
 import heading from "../assests/about.h.png";
 import slide_img from "../assests/slide-1-1.webp";
+import emoto from "../assests/emot4.png"
+
 import "../scss/utility.scss";
 const Utility = () => {
   return (
@@ -38,7 +40,8 @@ const Utility = () => {
               <a href="#" className="btn_1 ">
                 <button>
                   <b>Read Whitepaper</b>
-                  <div className="span">🤑</div>
+                  <div className="span"><img src={emoto} alt="" /></div>
+
                 </button>
               </a>
             </div>

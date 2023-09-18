@@ -2,6 +2,8 @@ import React from "react";
 import heading from "../assests/about.h.png";
 import about_img from "../assests/about_image.webp";
 import "../scss/about.scss";
+import emoto from "../assests/emot4.png"
+
 const About = () => {
   return (
     <>
@@ -29,7 +31,7 @@ const About = () => {
               <a href="#" className="btn_1 ">
                 <button>
                   <b>Read Whitepaper</b>
-                  <div className="span">🤑</div>
+                  <div className="span"><img src={emoto} alt="" /></div>
                 </button>
               </a>
             </div>

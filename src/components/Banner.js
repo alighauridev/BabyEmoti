@@ -9,6 +9,7 @@ import eye from "../assests/eye.png";
 import face from "../assests/face.png";
 import eyeBall from "../assests/img_1.png";
 // import Marquee from "react-simple-marquee";
+import Marquee from "react-fast-marquee";
 import videoIcon from "../assests/wideo-header.webp";
 const Banner = () => {
   useEffect(() => { }, []);
@@ -101,26 +102,14 @@ const Banner = () => {
           </div>
         </div>
       </section >
-      {/* <Marquee gradient={false} speed={20} className="marqu">
-        <div>
-          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
-        </div>
-        <div>
-          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
-        </div>
-        <div>
-          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
-        </div>
-        <div>
-          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
-        </div>
-        <div>
-          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
-        </div>
-        <div>
-          EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
-        </div>
-      </Marquee> */}
+
+      <Marquee gradient={false} speed={20} className="marqu">
+        {[1, 2, 3, 3].map((e, i) => (
+          <div key={i} className="mar">
+            EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
+          </div>
+        ))}
+      </Marquee>
     </>
   );
 };
