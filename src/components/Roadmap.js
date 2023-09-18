@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import "../scss/roadmap.scss";
 import { roadmap } from "../assests/data";
 import correct from "../assests/correctwhite-green.webp";
-
+import emoto from "../assests/emot4.png"
 const Roadmap = () => {
   
   
@@ -36,7 +36,7 @@ const Roadmap = () => {
           <a href="#" className="btn_1 ">
             <button>
               <b> View Audit Report</b>
-              <div className="span">🤑</div>
+              <div className="span"><img src={emoto} alt="" /></div>
             </button>
           </a>
         </div>

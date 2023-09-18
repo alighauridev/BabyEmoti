@@ -1,6 +1,8 @@
 import React from "react";
 import { steps } from "../assests/data";
 import "../scss/upgrade.scss";
+import emoto from "../assests/emot4.png"
+
 const Upgrade = () => {
   return (
     <>
@@ -35,7 +37,8 @@ const Upgrade = () => {
             <a href="#" className="btn_1 ">
               <button>
                 <b> I want this!!!!</b>
-                <div className="span">🤑</div>
+                <div className="span"><img src={emoto} alt="" /></div>
+
               </button>
             </a>
           </div>

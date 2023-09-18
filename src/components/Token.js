@@ -1,5 +1,6 @@
 import React from "react";
 import token_image from "../assests/diagram_token.webp";
+import emoto from "../assests/emot4.png"
 
 import "../scss/token.scss";
 const Token = () => {
@@ -52,7 +53,8 @@ const Token = () => {
           <a href="#" className="btn_1 ">
             <button>
               <b>Read Whitepaper</b>
-              <div className="span">🤑</div>
+              <div className="span"><img src={emoto} alt="" /></div>
+
             </button>
           </a>
         </div>

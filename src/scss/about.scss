@@ -66,32 +66,32 @@
         }
       }
 
-      .about_btn{
+      .about_btn {
         a {
-        
+          cursor: pointer;
 
           button {
             color: #000;
             font-family: "Zen_Dots";
             font-size: 18px;
             font-style: normal;
-            padding: 13px 33px 13px 33px;
+            padding: 8px 33px 8px 33px;
             background: transparent;
             border: 3px solid transparent;
             display: inline-block;
             position: relative;
-            /* display: flex; */
-            /* align-items: center; */
-            /* justify-content: center; */
             display: flex;
+            align-items: center;
+            justify-content: center;
             gap: 20px;
             width: 100%;
             max-width: 500px;
-            background: linear-gradient(to left, #10C71A, #1EEE2E) padding-box, linear-gradient(to top, #48f045, #2cd22c) border-box;
+            background: linear-gradient(to left, #1974F0, #1ABEFA) padding-box, linear-gradient(to top, #1974F0, #1ABEFA) border-box;
             text-decoration: none;
             border-radius: 34px;
+
             b {
-              color: #000;
+              color: white;
               font-family: "Zen_Dots";
               font-size: 18px;
               gap: 20px;
@@ -100,6 +100,14 @@
               @include mobile {
                 font-size: 15px;
 
+              }
+            }
+
+            .span {
+              img {
+                width: 100%;
+                height: 100%;
+                max-width: 45px;
               }
             }
 
@@ -149,7 +157,7 @@
       flex-direction: column;
       row-gap: 15px;
 
- 
+
     }
   }
 }
