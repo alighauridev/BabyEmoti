@@ -5,10 +5,13 @@ import { FiCopy } from "react-icons/fi";
 import icon1 from "../assests/coingecko.webp";
 import icon2 from "../assests/coinmarketcap.webp";
 import icon3 from "../assests/idmgpnn.webp";
-import Marquee from "react-simple-marquee";
+import eye from "../assests/eye.png";
+import face from "../assests/face.png";
+import eyeBall from "../assests/img_1.png";
+// import Marquee from "react-simple-marquee";
 import videoIcon from "../assests/wideo-header.webp";
 const Banner = () => {
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
   return (
     <>
       <section id="banner">
@@ -58,11 +61,47 @@ const Banner = () => {
             </div>
           </div>
           <div className="img" data-aos="fade-up">
-            <img src={img1} alt="" />
+            <div className="emoji">
+              <img src={img1} alt="" />
+              <div style={{
+                position: 'absolute',
+                top: '25%',
+                left: '50%',
+                width: '60%',
+                transform: 'translateX(-50%)'
+              }}>
+
+                <div className="eyes">
+                  <div className="left__eye">
+                    <figure className="eyeBall">
+                      <img src={eyeBall} alt="" className="eye__ball" />
+
+                    </figure>
+                    <img src={eye} className="eye" alt="" />
+                  </div>
+                  <div className="right__eye">
+                    <figure className="eyeBall">
+                      <img src={eyeBall} alt="" className="eye__ball" />
+
+                    </figure>
+                    <img src={eye} className="eye" alt="" />
+                  </div>
+                </div>
+                <div className="face">
+                  <div className="img__face">
+                    <img src={face} alt="" />
+                  </div>
+                  <div className="tongue">
+                    <img src="https://emoticoin.io/wp-content/themes/codetheme-child/anims/emoticon/images/img_2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-      </section>
-      <Marquee gradient={false} speed={20} className="marqu">
+      </section >
+      {/* <Marquee gradient={false} speed={20} className="marqu">
         <div>
           EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
         </div>
@@ -81,7 +120,7 @@ const Banner = () => {
         <div>
           EmotiCoin: Powering Holders With 100% Buybacks From Utilities 🤑
         </div>
-      </Marquee>
+      </Marquee> */}
     </>
   );
 };

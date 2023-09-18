@@ -1,7 +1,5 @@
 @import "./media.scss";
 
-
-
 * {
   padding: 0;
   margin: 0;
@@ -32,8 +30,6 @@
     @include md {
       display: flex;
       flex-direction: column-reverse;
-
-
     }
 
     .banner_info {
@@ -68,14 +64,13 @@
       }
 
       .banner_des {
-
         margin-top: 20px;
         margin-bottom: 25px;
         max-width: 650px;
 
         p {
           color: #000;
-          font-family: 'Poppins', sans-serif;
+          font-family: "Poppins", sans-serif;
 
           font-size: 16px;
           font-style: normal;
@@ -87,7 +82,6 @@
           }
         }
       }
-
 
       .banner_btns {
         display: flex;
@@ -101,7 +95,8 @@
         }
 
         a {
-          background: linear-gradient(to left, #10C71A, #1EEE2E) padding-box, linear-gradient(to top, #48f045, #2cd22c) border-box;
+          background: linear-gradient(to left, #10c71a, #1eee2e) padding-box,
+            linear-gradient(to top, #48f045, #2cd22c) border-box;
           text-decoration: none;
           border-radius: 34px;
 
@@ -132,7 +127,6 @@
 
               @include mobile {
                 font-size: 15px;
-
               }
             }
 
@@ -142,7 +136,6 @@
               padding: 12px 25px 12px 25px;
             }
           }
-
         }
 
         .btn_2 {
@@ -236,38 +229,193 @@
       @include md {
         justify-content: flex-start;
       }
+      .emoji {
+        position: relative;
+        animation: bounce 5s ease 0s 1 normal forwards;
+        animation-iteration-count: infinite;
+        transition: all 1s;
+        &::before {
+          content: "";
+        }
+        .eyes {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
 
-      img {
-        width: 484px;
-        object-fit: cover;
+          .left__eye {
+            position: relative;
+            margin-left: -10px;
+            .eyeBall {
+              position: absolute;
+              width: 120px;
+              height: 120px;
+              top: 43px;
+              left: 43px;
+            }
+            .eye__ball {
+              width: 50px;
+              height: 55px;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              z-index: 12;
+              animation: rotateEyeBall2 3s ease-out infinite;
+              transform-origin: 30% 30%;
+              border-radius: 50%;
+              width: 55px;
+              left: 0;
+              top: 0;
+              z-index: 12;
+            }
+            .eye {
+              width: 120px;
+              filter: drop-shadow(8px 14px 10px #00000059);
+              height: 120px;
+            }
+          }
+          .right__eye {
+            position: relative;
+            margin-right: -10px;
+            .eyeBall {
+              position: absolute;
+              width: 120px;
+              height: 120px;
+              top: 43px;
+              left: 43px;
+            }
+            .eye__ball {
+              width: 50px;
+              height: 55px;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              z-index: 12;
+              animation: rotateEyeBall 3s ease-out infinite;
+              transform-origin: 30% 30%;
+              border-radius: 50%;
+              width: 55px;
+              left: 0;
+              top: 0;
+              z-index: 12;
+            }
+            .eye {
+              width: 120px;
+              filter: drop-shadow(8px 14px 10px #00000059);
+              height: 120px;
+            }
+          }
+        }
+        .face {
+          margin-top: -10px;
+          .img__face {
+            display: flex;
+            justify-content: center;
+            max-width: 230px;
+            margin: auto;
+            img {
+              width: 100%;
+              animation: face 1.3s ease-in-out infinite;
+              transform-origin: center 30%;
+            }
+          }
+          .tongue {
+            display: flex;
+            justify-content: center;
+            max-width: 110px;
+            margin: -70px auto 0;
+            img {
+              width: 100%;
+              animation: face 1.3s ease-in-out infinite;
+              transform-origin: center 30%;
+            }
+          }
+        }
+        /* Define a keyframe animation for rotating the eye__ball around a specific point */
+        @keyframes rotateEyeBall {
+          0% {
+            transform: rotate(190deg) translate(-50%, -50%);
+          }
+          50% {
+            transform: rotate(604deg) translate(-50%, -50%);
+          }
+          75% {
+            transform: rotate(604deg) translate(-50%, -50%);
+          }
+          100% {
+            transform: rotate(190deg) translate(-50%, -50%);
+          }
+        }
+        @keyframes rotateEyeBall2 {
+          0% {
+            transform: rotate(0deg) translate(-50%, -50%);
+          }
+          50% {
+            transform: rotate(390deg) translate(-50%, -50%);
+          }
+          75% {
+            transform: rotate(390deg) translate(-50%, -50%);
+          }
+          100% {
+            transform: rotate(0deg) translate(-50%, -50%);
+          }
+        }
+        @keyframes face {
+          0% {
+            transform: rotate(10deg);
+          }
+          40% {
+            transform: rotate(-10deg);
+          }
+          80% {
+            transform: rotate(-20deg) scale(0.95);
+          }
+          100% {
+            transform: rotate(10deg) scale(1);
+          }
+        }
+        @keyframes bounce {
+          0% {
+            transform: translateY(0);
+          }
 
-        @include md {
-          width: 100%;
+          40% {
+            transform: translateY(-50px);
+          }
+          60% {
+            transform: translateY(150);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+        /* Apply the animation and set the transform-origin for the eye__ball elements */
+
+        > img {
+          width: 430px;
+          object-fit: cover;
+
+          @include md {
+            width: 100%;
+          }
         }
       }
     }
-
-
   }
-
-
 }
 
 .marqu {
   width: 100%;
-  background: linear-gradient(90deg, #1ABEFA 33.68%, #1974F0 72.86%);
+  background: linear-gradient(90deg, #1abefa 33.68%, #1974f0 72.86%);
   height: 7rem !important;
 
   p {
-
-
     display: flex;
     align-items: center;
     justify-content: center;
 
     div {
       font-family: "Zen_Dots";
-      color: #FFF !important;
+      color: #fff !important;
       text-align: center;
 
       font-size: 30px;
