@@ -5,9 +5,10 @@ import "../scss/roadmap.scss";
 import { roadmap } from "../assests/data";
 import correct from "../assests/correctwhite-green.webp";
 import emoto from "../assests/emot4.png"
+import boll from "../assests/boll.png"
 const Roadmap = () => {
-  
-  
+
+
   return (
     <>
       <section id="roadmap">
@@ -16,20 +17,25 @@ const Roadmap = () => {
         </div>
         <div className="container">
           <div className="roadmap__grid">
-            {roadmap.map((item, i) => {
-              return (
-                <div className={`item ${i % 2 == 0 ? "left" : "right"}`}>
-                  <h2>
-                    <img src={correct} alt={item.id} /> {item.id}
-                  </h2>
-                  <ul>
-                    {item.points.map((item, i) => {
-                      return <li key={i}>{item}</li>;
-                    })}
-                  </ul>
-                </div>
-              );
-            })}
+            <div>
+              {roadmap.map((item, i) => {
+                return (
+                  <div className={`item ${i % 2 == 0 ? "left" : "right"}`}>
+                    <h2>
+                      <img src={correct} alt={item.id} /> {item.id}
+                    </h2>
+                    <ul>
+                      {item.points.map((item, i) => {
+                        return <li key={i}>{item}</li>;
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
+            <figure>
+              <img src={boll} alt="" />
+            </figure>
           </div>
         </div>
         <div className="aboutTwo_btn" data-aos="fade-up">
