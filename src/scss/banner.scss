@@ -237,6 +237,36 @@
         &::before {
           content: "";
         }
+        &:hover {
+          .gallery {
+            img {
+              &:nth-child(1) {
+                top: -100px;
+                left: -50px;
+              }
+              &:nth-child(2) {
+                bottom: 65px;
+                left: 320px;
+              }
+              &:nth-child(3) {
+                bottom: -168px;
+                left: -30px;
+              }
+              &:nth-child(4) {
+                bottom: -305px;
+                left: -30px;
+              }
+              &:nth-child(5) {
+                bottom: -330px;
+                left: 83px;
+              }
+              &:nth-child(6) {
+                top: 244px;
+                left: 341px;
+              }
+            }
+          }
+        }
         .eyes {
           display: flex;
           justify-content: space-between;
@@ -330,6 +360,58 @@
             }
           }
         }
+        .gallery {
+          display: flex;
+          position: relative;
+          z-index: -1;
+          img {
+            position: absolute;
+
+            &:nth-child(1) {
+              width: 100px;
+              object-fit: contain;
+              top: -50px;
+              left: 70px;
+              z-index: -1;
+              transition: 1s all;
+            }
+            &:nth-child(2) {
+              max-width: 52px;
+              bottom: -20px;
+              left: 255px;
+              z-index: -3;
+              transition: all 1.5s;
+            }
+            &:nth-child(3) {
+              max-width: 45px;
+              bottom: -158px;
+              left: 30px;
+              z-index: 1;
+              transition: all 1s;
+            }
+            &:nth-child(4) {
+              max-width: 85px;
+              bottom: -225px;
+              left: 75px;
+              z-index: 8;
+              transition: all 1s;
+            }
+            &:nth-child(5) {
+              max-width: 35px;
+              bottom: -225px;
+              left: 75px;
+              z-index: 8;
+              transition: all 1s;
+            }
+            &:nth-child(6) {
+              max-width: 87px;
+              top: 138px;
+              left: 211px;
+              z-index: -3;
+              transition: all 1.5s;
+            }
+          }
+        }
         /* Define a keyframe animation for rotating the eye__ball around a specific point */
         @keyframes rotateEyeBall {
           0% {
@@ -393,6 +475,8 @@
         > img {
           width: 430px;
           object-fit: cover;
+          filter: drop-shadow(1px 1px 20px #e59100fa);
+          fill: #e59100fa;
 
           @include md {
             width: 100%;

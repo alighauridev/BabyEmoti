@@ -97,7 +97,20 @@ const Banner = () => {
                   </div>
                 </div>
               </div>
-
+              <div style={{
+                position: 'absolute',
+                top: '25%',
+                left: '50%',
+                width: '100%',
+                transform: 'translateX(-50%)'
+              }} className="gallery">
+                <img src="https://emoticoin.io/wp-content/themes/codetheme-child/img/img-usmiech/emo_party.webp" alt="" />
+                <img src="https://emoticoin.io/wp-content/themes/codetheme-child/img/img-usmiech/emo_cash.webp" alt="" />
+                <img src="https://emoticoin.io/wp-content/themes/codetheme-child/img/img-usmiech/emo_love.webp" alt="" />
+                <img src="https://emoticoin.io/wp-content/themes/codetheme-child/img/img-usmiech/bubla_6.webp" alt="" />
+                <img src="https://emoticoin.io/wp-content/themes/codetheme-child/img/img-usmiech/bubla_5.webp" alt="" />
+                <img src="https://emoticoin.io/wp-content/themes/codetheme-child/img/img-usmiech/emo_happy.webp" alt="" />
+              </div>
             </div>
           </div>
         </div>

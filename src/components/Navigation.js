@@ -47,7 +47,7 @@ const Navigation = () => {
               <div className="logo">
                 <a href="#">
                   <img src={logo1} alt="logo" />
-                
+
                 </a>
               </div>
               <nav>
@@ -56,26 +56,30 @@ const Navigation = () => {
                   style={{ zIndex: "11" }}
                   onClick={() => setNavToggler(false)}
                 > */}
-                  <ul className={navToggler ? "ul__active" : ""}>
-                    {nav.map((ite, ind) => {
-                      return (
-                        <li key={ind}>
-                          <a
-                            style={navColor ? { textShadow: "none" } : {}}
-                            href={ite.path}
-                          >
-                            {ite.name}
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
+                <ul className={navToggler ? "ul__active" : ""}>
+                  {nav.map((ite, ind) => {
+                    return (
+                      <li key={ind}>
+                        <a
+                          style={navColor ? { textShadow: "none" } : {}}
+                          href={ite.path}
+                        >
+                          {ite.name}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
                 {/* </Backdrop> */}
               </nav>
               <div className="nav__btns">
                 <div className="btn">
-                  <span>CHART </span>
+                  <span>UNISWAP </span>
                   🤑
+                </div>
+                <div className="btn__">
+                  <span>Compitetion </span>
+                  <img src="https://emoticoin.io/wp-content/themes/codetheme-child/img/zzzzz.webp" style={{ width: '25px' }} alt="" />
                 </div>
                 <i onClick={() => barBtn()} className="bars">
                   {/* <img

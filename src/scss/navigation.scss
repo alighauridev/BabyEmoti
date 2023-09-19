@@ -1,7 +1,6 @@
 @import "./variable.scss";
 @import "./media.scss";
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -22,7 +21,7 @@ header {
       max-width: 1250px;
       margin: 0 auto;
 
-      padding: 15px ;
+      padding: 15px;
 
       .nav__grid {
         display: grid;
@@ -49,7 +48,6 @@ header {
           }
 
           img {
-
             /* margin-left: -6px; */
             width: 100%;
             max-width: 200px;
@@ -64,7 +62,7 @@ header {
             list-style: none;
             gap: 30px;
 
-            >li {
+            > li {
               cursor: pointer;
               text-align: center;
               font-family: "Zen_Dots";
@@ -74,32 +72,28 @@ header {
               line-height: normal;
               text-decoration: none;
 
-              >a {
+              > a {
                 transition: 0.3s all;
                 color: #000;
                 text-transform: uppercase;
 
                 font-family: "Zen_Dots";
 
-                &:hover {}
+                &:hover {
+                }
               }
             }
-
-
           }
         }
 
         .nav__btns {
           display: flex;
           align-items: center;
-          align-items: center;
-
-
-
+          gap: 10px;
           .btn {
             margin: 3px;
             position: relative;
-            background: #FFD71E;
+            background: #ffd71e;
             padding: 11px 10px 10px 10px;
             border-radius: 25px;
             color: #000;
@@ -109,7 +103,7 @@ header {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            border: 4px solid #2ED42E;
+            border: 4px solid #2ed42e;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -129,7 +123,38 @@ header {
               margin-right: 10px;
             }
           }
+          .btn__ {
+            color: #000;
+            font-family: "Zen_Dots";
+            font-size: 18px;
+            font-style: normal;
+            padding: 8px 33px 8px 33px;
+            background: transparent;
+            border: 3px solid transparent;
+            display: inline-block;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 100%;
+            max-width: 500px;
+            background: linear-gradient(to left, #1974f0, #1abefa) padding-box,
+              linear-gradient(to top, #1974f0, #1abefa) border-box;
+            text-decoration: none;
+            border-radius: 34px;
 
+            span {
+              text-align: center;
+              font-family: "Zen_Dots";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              margin-right: 10px;
+              color: #fff;
+            }
+          }
           .bars {
             cursor: pointer;
             position: relative;
@@ -185,8 +210,6 @@ header {
                 }
               }
             }
-
-
           }
         }
       }
@@ -217,7 +240,7 @@ header {
     right: 1.7%;
   }
 
-  >i {
+  > i {
     width: 50px;
     height: 50px;
     display: grid;
@@ -245,7 +268,7 @@ header {
   header {
     .nav__grid {
       .nav__btns {
-        >i {
+        > i {
           display: none;
         }
       }
@@ -258,7 +281,8 @@ header {
     .nav__grid {
       grid-template-columns: 1fr 1.5fr !important;
 
-      .logo {}
+      .logo {
+      }
 
       nav {
         // position: absolute;
@@ -269,7 +293,6 @@ header {
         // box-shadow: 0 0 5px black;
 
         ul {
-
           transition: 0.3s all ease-out;
           align-items: start !important;
           justify-content: center !important;
@@ -308,12 +331,11 @@ header {
 
         .ul__active {
           transform: translateX(0%);
-
         }
       }
 
       .nav__btns {
-        >i {
+        > i {
           width: 50px;
           height: 50px;
           display: grid;
